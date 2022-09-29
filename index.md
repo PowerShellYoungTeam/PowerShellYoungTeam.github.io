@@ -1,5 +1,7 @@
-Here you can say lots of fun things about your site.
+Blah de blah
 
-Maybe say a some things about yourself.
+Don't worry, I promise I will write about myself.
 
-Or maybe what you plan to blog about.
+I will blog about PowerShell and some Windows Administration stuff, Mainly to help me remember and figure stuff out, but if it helps others then it's all good.
+
+Never underestimate the power of lazyness...
