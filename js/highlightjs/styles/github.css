@@ -11,7 +11,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   overflow-x: auto;
   padding: 0.5em;
   color: #333;
-  background: #000000;
+  background: #f8f8f8;
 }
 
 .hljs-comment,
