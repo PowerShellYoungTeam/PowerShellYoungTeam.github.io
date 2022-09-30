@@ -1,3 +1,5 @@
+theme: "minima"
+
 title: "PowerShell Young Team"
 author: "Steven Wight"
 description: "You can take the SysAdmin out of the Scheme, but you can't take the Scheme out the SysAdmin. Using PowerShell for an easy life..." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
@@ -21,7 +23,7 @@ linkedin_username: "steven-wight-79aa0525"
 minima:
   Skin: dark
 
-theme: "minima"
+
 
 #remote_theme: pages-themes/hacker@v0.2.0
 
