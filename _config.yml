@@ -1,5 +1,3 @@
-theme: "minima"
-
 title: "PowerShell Young Team"
 author: "Steven Wight"
 description: "You can take the SysAdmin out of the Scheme, but you can't take the Scheme out the SysAdmin. Using PowerShell for an easy life..." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
@@ -20,6 +18,8 @@ linkedin_username: "steven-wight-79aa0525"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
+remote_theme: jekyll/minima
+
 minima:
   Skin: dark
 
@@ -36,7 +36,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  #- jekyll-remote-theme 
+  - jekyll-remote-theme 
 
 titles_from_headings:
   strip_title: true
