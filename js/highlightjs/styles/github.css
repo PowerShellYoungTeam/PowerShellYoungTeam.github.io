@@ -2,6 +2,8 @@
 
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
+#f8f8f8 -white
+#000000
 */
 
 .hljs {
@@ -9,7 +11,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   overflow-x: auto;
   padding: 0.5em;
   color: #333;
-  background: #f8f8f8;
+  background: #000000;
 }
 
 .hljs-comment,
