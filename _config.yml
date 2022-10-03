@@ -18,8 +18,8 @@ linkedin_username: "steven-wight-79aa0525"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-remote_theme: jekyll/minima
-
+#remote_theme: jekyll/minima
+theme: minima
 minima:
   Skin: dark
 
