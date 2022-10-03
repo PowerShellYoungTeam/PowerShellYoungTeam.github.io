@@ -10,7 +10,7 @@ github_username: "PowerShellYoungTeam"
 #linkedin_username: "linkedinuser"
 
 markdown: kramdown
-Theme: minima
+Theme: "minima"
 
 rss: rss
 
@@ -21,3 +21,10 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
