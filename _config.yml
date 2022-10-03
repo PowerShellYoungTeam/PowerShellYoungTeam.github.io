@@ -19,13 +19,13 @@ linkedin_username: "steven-wight-79aa0525"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 #remote_theme: jekyll/minima
-theme: minima
-minima:
-  Skin: dark
+#theme: minima
+#minima:
+  #Skin: dark
 
 
 
-#remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 
 rss: rss
 
