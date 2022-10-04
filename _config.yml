@@ -10,7 +10,11 @@ github_username: "PowerShellYoungTeam"
 #linkedin_username: "linkedinuser"
 
 markdown: kramdown
-Theme: "minima"
+theme: minima
+
+minima:
+  date_format: "%b %-d, %Y"
+  
 
 rss: rss
 
@@ -21,6 +25,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+   - jekyll-seo-tag
 
 defaults:
   - scope:
