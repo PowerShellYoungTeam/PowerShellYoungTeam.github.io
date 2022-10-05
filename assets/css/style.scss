@@ -2,10 +2,7 @@
 ---
 
 
-@import "{{ site.theme | default: 'dark' }}";
-
 @import
-  "minima/skins/{{ site.minima.skin | default: 'dark' }}";
-@import "minima/skins/dark";
-@import "minima/initialize";
+  "minima/skins/{{ site.minima.skin | default: 'dark' }}",
+  "minima/initialize";
 
