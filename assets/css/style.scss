@@ -1,6 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme | default: 'dark' }}";
+@import "{{ site.theme | default: 'classic' }}";
 
  "minima/initialize";
