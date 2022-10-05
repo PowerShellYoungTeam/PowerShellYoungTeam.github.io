@@ -2,4 +2,4 @@
 ---
 
 
-@import "{{ site.theme | default: 'classic' }}";
+@import "{{ site.theme | default: 'dark' }}";
