@@ -356,3 +356,7 @@ $table-border-color: $lm-table-border-color;
 } @else {
 
   // Classic skin syntax highlighting
+  
+    @include lm-highlight;
+
+}
