@@ -1,6 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "{{ site.theme | default: 'dark' }}";
 
-body {background-color: coral;}
+ "minima/initialize";
