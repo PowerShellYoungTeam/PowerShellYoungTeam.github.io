@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@PowerShellYoungTeam 
-jekyll
-/
-minima
-Public
-Code
-Issues
-9
-Pull requests
-21
-Actions
-Projects
-Security
-Insights
-minima/_includes/social.html
-@juicedatom
-juicedatom Add google scholar. (#673)
-…
-Latest commit 3e6ac19 22 days ago
- History
- 19 contributors
-@ashawley@hszhakka@ashmaroli@yshmarov@uliwitness@mcmd@MikkCZ@juicedatom@jmmcduffie@jekyllbot@HackingGate@ankitrgadiya
-22 lines (21 sloc)  5.83 KB
-
 {%- assign social = site.minima.social_links -%}
 
 <ul class="social-media-list">
@@ -51,18 +20,3 @@ Latest commit 3e6ac19 22 days ago
   {%- if social.devto -%}<li><a href="https://dev.to/{{ social.devto | cgi_escape | escape }}" target="_blank" title="{{ social.devto | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#devto' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if social.google_scholar_id -%}<li><a href="https://scholar.google.com/citations?user={{ social.google_scholar_id | cgi_escape | escape }}" target="_blank" title="Google Scholar"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#google_scholar' | relative_url }}"></use></svg></a></li>{%- endif -%}
 </ul>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-minima/social.html at master · jekyll/minima
