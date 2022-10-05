@@ -5,6 +5,6 @@
 @import "{{ site.theme | default: 'dark' }}";
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+  "minima/skins/{{ site.minima.skin | default: 'dark' }}";
 @import "minima/skins/dark";
 
