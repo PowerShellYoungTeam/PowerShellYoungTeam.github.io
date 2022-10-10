@@ -27,6 +27,10 @@ header_pages:
 
 rss: rss
 
+titles_from_headings:
+  strip_title: true
+  collections: true
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
