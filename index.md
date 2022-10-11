@@ -1,3 +1,3 @@
 Hello World
 
-![Screenshot](/assets/images/BgMeanCity2.jpg)
+![Screenshot](https://github.com/PowerShellYoungTeam/PowerShellYoungTeam.github.io/blob/main/assets/images/BgmeanCity2.jpg)
