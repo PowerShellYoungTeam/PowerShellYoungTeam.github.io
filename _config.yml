@@ -1,5 +1,7 @@
 title: "PowerShell Young Team"
-author: "Steven Wight"
+author: 
+ name: "Steven Wight"
+ 
 description: "Blog under construction" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
@@ -24,7 +26,7 @@ minima:
    github:  PowerShellYoungTeam
 
 header_pages:
-- about.md  
+ - about.md  
   
 
 rss: rss
