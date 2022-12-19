@@ -2,7 +2,7 @@ title: "PowerShell Young Team"
 author: 
  name: "Steven Wight"
  
-description: "Blog under construction" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "You can take the sysadmin out of the scheme, but you can't take the scheme out the sysadmin... A blog on my adventures with PowerShell (plus other tech!) as I attempt to automate myself a quiet life!" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -26,7 +26,7 @@ minima:
   social_links:
    - { platform: github, user_url: "https://github.com/PowerShellYoungTeam/" }
    - { platform: twitter, user_url: "https://twitter.com/PoSHYoungTeam" }
-   - { platform: Linkedin, user_url: "https://www.linkedin.com/in/steven-wight-79aa0525/" }
+   - { platform: linkedin, user_url: "https://www.linkedin.com/in/steven-wight-79aa0525/" }
    #twitter: PoSHYoungTeam
    #github:  PowerShellYoungTeam
 
