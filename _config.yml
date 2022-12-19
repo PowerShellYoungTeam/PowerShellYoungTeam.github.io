@@ -10,9 +10,9 @@ description: "Blog under construction" # This will show up in places like twitte
  #social_links:
    #twitter: PoSHYoungTeam
    #github:  PowerShellYoungTeam
-#twitter_username: "@PoSHYoungTeam"
-#github_username: "PowerShellYoungTeam"
-#linkedin_username: "steven-wight-79aa0525"
+twitter_username: "@PoSHYoungTeam"
+github_username: "PowerShellYoungTeam"
+linkedin_username: "steven-wight-79aa0525"
 
 
 
@@ -24,8 +24,8 @@ minima:
   skin: dark
   date_format: "%b %-d, %Y"
   social_links:
-   twitter: PoSHYoungTeam
-   github:  PowerShellYoungTeam
+   #twitter: PoSHYoungTeam
+   #github:  PowerShellYoungTeam
 
 #header_pages:
  #- about.md   
