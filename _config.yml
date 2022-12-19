@@ -25,9 +25,8 @@ minima:
    twitter: PoSHYoungTeam
    github:  PowerShellYoungTeam
 
-header_pages:
- - about.md  
-  
+#header_pages:
+ #- about.md   
 
 rss: rss
 
@@ -48,6 +47,6 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
