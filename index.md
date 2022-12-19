@@ -4,5 +4,5 @@
 
 Hello World
 
-Find out more about me [about me..]( /about.md ).
+:) this is going to be up and down like a yoyo for a bit..
 
