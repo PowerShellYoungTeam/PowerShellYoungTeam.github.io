@@ -36,7 +36,7 @@ Import the module (Import-module SecretManagement.KeePass) and then you need to 
 Register-KeepassSecretVault -Path <Path to Keepass Vault> -UseMasterPassword
 ```
 
-![registerVault]( /assets/images/register-Vault.jpg)
+![registerVault]( /assets/images/registerVault.jpg)
 
 You can use Test-SecretVault to check if it worked (will return Boolean) like below
 
@@ -44,7 +44,7 @@ You can use Test-SecretVault to check if it worked (will return Boolean) like be
 Test-SecretVault -Name <Name of vault>
 ```
 
-![TestSecVault]( /assets/images/Test-SecVault.jpg)
+![TestSecVault]( /assets/images/TestSecVault.jpg)
 
 ## PowerShellAI
 
