@@ -22,7 +22,7 @@ You will also need to get your OpenAI API key from <https://beta.openai.com/acco
 
 **NOTE:** I found it best just to put your secrets that you want to retrieve via PowerShell in the root of the Vault, hit problems with I put them in a subfolder, so best as per below screenshot.
 
-![VaultPicRoot] ( /assets/images/VaultPicRoot.jpg)
+![VaultPicRoot](assets/images/VaultPicRoot.jpg)
 
 To install the SecretManagement.Keepass module just download from the PowerShell gallery. 
 
@@ -36,7 +36,7 @@ Import the module (Import-module SecretManagement.KeePass) and then you need to 
 Register-KeepassSecretVault -Path <Path to Keepass Vault> -UseMasterPassword
 ```
 
-![register-Vault] ( /assets/images/register-Vault.jpg)
+![register-Vault]( /assets/images/register-Vault.jpg)
 
 You can use Test-SecretVault to check if it worked (will return Boolean) like below
 
@@ -44,7 +44,7 @@ You can use Test-SecretVault to check if it worked (will return Boolean) like be
 Test-SecretVault -Name <Name of vault>
 ```
 
-![Test-SecVault] ( /assets/images/Test-SecVault.jpg)
+![Test-SecVault]( /assets/images/Test-SecVault.jpg)
 
 ## PowerShellAI
 
@@ -72,4 +72,4 @@ set-OpenAIKey $CHatGPTAPIKEY
 Get-GPT3Completion 'Get me a random quote'
 ```
 
-![ProfileWorking] ( /assets/images/ProfileWorking.jpg)
+![ProfileWorking]( /assets/images/ProfileWorking.jpg)
