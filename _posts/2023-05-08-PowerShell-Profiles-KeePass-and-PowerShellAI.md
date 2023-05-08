@@ -1,6 +1,6 @@
 ![Screenshot]( /assets/images/Hill_Night.png)
 
-PowerShell Profiles, KeePass and PowerShell AI (ChatGPT/OpenAI)
+# PowerShell Profiles, KeePass and PowerShell AI (ChatGPT/OpenAI)
 
 I was asked over the weekend on Twitter if I could share how I setup my PowerShell profile to pull my OpenAI API key from a KeePass vault so you can start using the PowerShell AI module straight away!
 
@@ -12,7 +12,7 @@ Doug Finke's PowerShellAI - https://github.com/dfinke/PowerShellAI
 
 Justin Grote's SecretManagement.Keepass - https://github.com/JustinGrote/SecretManagement.KeePass
 
-SecretManagement.Keepass
+## SecretManagement.Keepass
 
 So I already had KeYPass, if you don't then Grab and install KeePass from here https://keepass.info (It's open source so it's buckshee !!)
 
@@ -22,33 +22,35 @@ You will also need to get your OpenAI API key from https://beta.openai.com/accou
 
 NOTE: I found it best just to put your secrets that you want to retrieve via PowerShell in the root of the Vault, hit problems with I put them in a subfolder, so best as per below screenshot.
 
-![Screenshot] ( /assets/images/VaultPicRoot.jpg)
+[Screenshot] ( /assets/images/VaultPicRoot.jpg)
 
 To install the SecretManagement.Keepass module just download from the PowerShell gallery. 
 
-```PowerShell
+```powershell
 Install-Module -Name SecretManagement.KeePass
 ```
 
 Import the module (Import-module SecretManagement.KeePass) and then you need to register the vault so the module knows where and how to access it (below is for a master password only vault, there is a -keyfile argument you can use for keyfiles)
 
-```PowerShell
+```powershell
 Register-KeepassSecretVault -Path <Path to Keepass Vault> -UseMasterPassword
 ```
 
-![Screenshot] ( /assets/images/register-Vault.jpg)
+[Screenshot] ( /assets/images/register-Vault.jpg)
 
 You can use Test-SecretVault to check if it worked (will return Boolean) like below
 
-```PowerShell
+```powershell
 Test-SecretVault -Name <Name of vault>
 ```
 
-![Screenshot] ( /assets/images/Test-SecVault.jpg)
+[Screenshot] ( /assets/images/Test-SecVault.jpg)
+
+## PowerShellAI
 
 Now we need to install and import PowerShellAI module
 
-```PowerShell
+```powershell
 Install-Module -Name PowerShellAI 
 Import-Module -Name PowerShellAI
 ```
@@ -59,7 +61,7 @@ So for me, I just add this into my profile and when I start a session, I just en
 
 (don't need the test-SecretVault, I have left it in there tho..)
 
-```PowerShell
+```powershell
 import-module PowerShellAI
 Import-Module SecretManagement.KeePass
 
@@ -70,4 +72,4 @@ set-OpenAIKey $CHatGPTAPIKEY
 Get-GPT3Completion 'Get me a random quote'
 ```
 
-![Screenshot] ( /assets/images/ProfileWorking.jpg)
+[Screenshot] ( /assets/images/ProfileWorking.jpg)
