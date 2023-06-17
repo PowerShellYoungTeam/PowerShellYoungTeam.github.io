@@ -6,8 +6,8 @@ I was asked over the weekend on Twitter if I could share how I setup my PowerShe
 
 Apologies if this comes across as a notes dump or a user guide written by your IT department, cos that what is basically is!! :)
 
-> Right first things first! Let's download the modules we need!
-> 
+Right first things first! Let's download the modules we need!
+
 > - Doug Finke's **PowerShellAI** - <https://github.com/dfinke/PowerShellAI>
 > 
 > - Justin Grote's **SecretManagement.Keepass** - <https://github.com/JustinGrote/SecretManagement.KeePass>
