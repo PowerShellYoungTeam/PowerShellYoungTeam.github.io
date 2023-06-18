@@ -58,7 +58,7 @@ function Get-BloombergRelease{
 		#Regex pattern to compare two strings
 		$pattern = "$firstString(.*?)$secondString"
 
-		#Perform the match operation to grab the moth string
+		#Perform the match operation to grab the month string
 		$ReleaseMonth = [regex]::Match($HTMLwithData,$pattern).Groups[1].Value
 
 		if ($null -eq $ReleaseMonth){
