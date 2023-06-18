@@ -71,7 +71,7 @@ function Get-BloombergRelease{
 		}
 	}
 
- End {
+End {
 
 	$End = Get-Date
 
