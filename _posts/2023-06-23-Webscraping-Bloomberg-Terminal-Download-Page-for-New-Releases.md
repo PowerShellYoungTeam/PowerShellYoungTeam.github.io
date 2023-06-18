@@ -1,3 +1,5 @@
+
+
 # Webscraping Bloomberg Terminal Download Page for New Releases
 
 > NB - this only works in Windows Powershell at the moment, in Core it throws the below error with the .ParsedHtml.getElementsByTagName and still to get to the bottom of that!
@@ -12,7 +14,7 @@ So using his code and a lot of playing about with regex to pull out the Month of
 
 Here is the function below, you can also grab it from <https://github.com/PowerShellYoungTeam/Trading-Apps>
 
-'''powershell
+```powershell
 function Get-BloombergRelease{
 	<#
 	.SYNOPSIS
@@ -81,15 +83,15 @@ End {
 	Return $ReleaseMonth
 	}
 }
-'''
+```
 
 also what I do, I stick it in my powershell profile (I put the function in the profile, you could stick it in a module you import etc...) and also add this in below it..
 
-'''powershell
+```powershell
 Write-host "Today's date: $(get-date)"
 Write-host "Current Bloomberg Terminal Release:"
 Get-BloombergRelease
-'''
+```
 
 and everytime I open a session it will check and let me know what month's update is available
 
