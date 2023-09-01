@@ -12,10 +12,10 @@ One thing I really liked (and I was falling down badly with) was the idea of too
 
 These were:
 
-  • Get-PYTALLADComputers - Function to extract all AD Computer objects for a domain into a CSV & spreadsheet
-	• Get-PYTALLADusers - Function to extract all AD User objects for a domain into a CSV & spreadsheet
-	• Get-PYTUserGroupMembership - Function to extract all members of AD groups populated with user AD objects with a certain string in the names details into a CSV & spreadsheet
-	• Get-PYTAdminGroups - Function to extract all Admin Groups & memberships details from multiple Domains into a CSV & spreadsheet, made specifically for admin groups (can be used for others)
+* Get-PYTALLADComputers - Function to extract all AD Computer objects for a domain into a CSV & spreadsheet
+* Get-PYTALLADusers - Function to extract all AD User objects for a domain into a CSV & spreadsheet
+* Get-PYTUserGroupMembership - Function to extract all members of AD groups populated with user AD objects with a certain string in the names details into a CSV & spreadsheet
+* Get-PYTAdminGroups - Function to extract all Admin Groups & memberships details from multiple Domains into a CSV & spreadsheet, made specifically for admin groups (can be used for others)
 
 These functions are nothing special, ALL AD Computers and users would pull out all those objects from AD into an array, then loop through that array, putting info into a PS custom object (we have some custom properties for those objects in AD that come out as non-string objects, so I used to PS Custom object to turn them into strings for export to CSV) once the CSV has been finished (handy for other scripts to read, as not got my head fully around ImportExcel yet) we basically create a .Xlsx from it and output to our chosen folder (this case C:\temp, but easy to change as it’s a parameter that can be passed to the function.
 
