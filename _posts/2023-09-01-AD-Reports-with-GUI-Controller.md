@@ -38,7 +38,7 @@ Powershell and Forms (part 3) – Checkboxes - ServerFixes <https://serverfixes.
 Also I found that ChatGPT was decent at building the barebones of a GUI too! 
 
 So here is the GUI!
-![GUI]( /assets/images/ADReportsGUI.PNG)
+![GUI]( /assets/images/ADReportsGUI.png)
 
 I have also built a much more complicated GUI controller for a Nutanix module I am making, but it's still in progress!
 
