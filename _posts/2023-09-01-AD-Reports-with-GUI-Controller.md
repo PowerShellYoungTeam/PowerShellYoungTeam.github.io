@@ -40,7 +40,7 @@ So I figured it was time to make the controller scripts fire up a GUI and see if
 
 I did some research and found these which helped massively! 
 
-**Creating a custom input box - PowerShell | Microsoft Learn** <https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-a-custom-input-box?view=powershell-7.3> - This was my first stop, helped me pull in the .NET framework form-building features, build the form and labels add OK/ cancel buttons!
+**Creating a custom input box - PowerShell - Microsoft Learn** <https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-a-custom-input-box?view=powershell-7.3> - This was my first stop, helped me pull in the .NET framework form-building features, build the form and labels add OK/ cancel buttons!
 
 **Powershell and Forms (part 3) – Checkboxes - ServerFixes** <https://serverfixes.com/powershell-checkboxes> - this helped me add the checkboxes for what scripts you want to run.
 
