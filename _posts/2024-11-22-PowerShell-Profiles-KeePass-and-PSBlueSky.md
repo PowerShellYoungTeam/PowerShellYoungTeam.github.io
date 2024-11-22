@@ -24,7 +24,7 @@ Install KeePass and create a Vault with master password or Keyfile (or both)
 
 You will also create a BlueSky account from <https://bsky.app/> and store the username and password in the vault 
 
-**NOTE:** Username is case sensitive too!, also don't be like me and put the @ sign before the username, so like PoshYoungTeam.bsky.social, NOT @PoshYoungTeam.bsky.social
+**NOTE:** Username is case sensitive too!, also don't be like me and put the @ sign before the username, so like **PoshYoungTeam.bsky.social**, NOT **@PoshYoungTeam.bsky.social**
 
 **ALSO:** I found it best just to put your secrets that you want to retrieve via PowerShell in the root of the Vault, hit problems with I put them in a sub group, so best as per below screenshot.
 
@@ -61,7 +61,7 @@ Install-Module -Name PSBlueSky
 Import-Module -Name PSBlueSky
 ```
 
-So now we need to get the BlueSky Credentials from the vault and use it for PSBlueSky's Start-BSkySession cmdlet, after that you (Hopefully) should be cskeeting in no time!!
+So now we need to get the BlueSky Credentials from the vault and use it for PSBlueSky's **Start-BSkySession** cmdlet, after that you (Hopefully) should be skeeting in no time!!
 
 So let's grab the cred's and start a session
 
@@ -72,11 +72,11 @@ Start-BSkySession -Credential $BskyCreds
 
 ![BskySession]( /assets/images/BskySession.jpg)
 
-and use New-BskyPost to send a Skeet from the CLI...
+and use **New-BskyPost** to send a Skeet from the CLI...
 
 ![Skeet]( /assets/images/Skeet.JPG)
 
-Bar the usual get-help and readme on the GitHub repo, also has this more informative version of get-command -module PSblueSky: Get-BskyModuleInfo, which I think is pure dead brilliant!
+Bar the usual get-help and readme on the GitHub repo, also has this more informative version of get-command -module PSblueSky: **Get-BskyModuleInfo**, which I think is pure dead brilliant!
 
 ![Bskymoduleinfo]( /assets/images/Bskymoduleinfo.jpg)
 
