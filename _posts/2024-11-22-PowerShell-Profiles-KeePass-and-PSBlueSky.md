@@ -72,7 +72,7 @@ Start-BSkySession -Credential $BskyCreds
 
 and use New-BskyPost to send a Skeet from the CLI...
 
-![Skeet]( /assets/images/Skeet.jpg)
+![Skeet]( /assets/images/Skeet.JPG)
 
 Bar the usual get-help and readme on the GitHub repo, also has this more informative version of get-command -module PSblueSky: Get-BskyModuleInfo, which I think is pure dead brilliant!
 
