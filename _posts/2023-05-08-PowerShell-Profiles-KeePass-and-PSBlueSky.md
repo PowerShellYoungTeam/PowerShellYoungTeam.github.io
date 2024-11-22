@@ -1,4 +1,4 @@
-![Screenshot]( /assets/images/Hill_Night.png)
+![Screenshot]( /assets/images/flats2.png)
 
 # PowerShell Profiles, KeePass and PSBlueSky
 
@@ -6,9 +6,9 @@ Was listening to the PowerShell Podcast and heard about a few peps had moved ove
 
 Had a wee recce, in the github repo's README, it is suggested:
 
-> *For automation purposes, you can use the Secrets management module to store your credential. Write your own code to retrieve the credential and pass it to the module commands.*
+> For automation purposes, you can use the Secrets management module to store your credential. Write your own code to retrieve the credential and pass it to the module commands.
 
-hmm... my wee bit in my profile for getting my OpenAI key should for this work!
+hmm... my wee bit in my profile for getting my OpenAI key should work for this!
 
 what we need:
 
@@ -22,11 +22,11 @@ So I already had KeePass, if you don't then Grab and install KeePass from here <
 
 Install KeePass and create a Vault with master password or Keyfile (or both)
 
-You will also create a BlueSky account from <https://bsky.app/> and store the username and password in the vault **Username is case sensitive too!**
+You will also create a BlueSky account from <https://bsky.app/> and store the username and password in the vault **Username is case sensitive too!, also don't be like me and put the @ sign before the username, so like PoshYoungTeam.bsky.social, NOT @PoshYoungTeam.bsky.social  :| **
 
 **NOTE:** I found it best just to put your secrets that you want to retrieve via PowerShell in the root of the Vault, hit problems with I put them in a sub group, so best as per below screenshot.
 
-![VaultPicRoot]( /assets/images/VaultPicRoot2.jpg)
+![VaultPicRoot]( /assets/images/VaultPicRoot.jpg)
 
 To install the SecretManagement.Keepass module just download from the PowerShell gallery. 
 
@@ -95,6 +95,6 @@ $BskyFeeds = Get-BskyFeed
 $BskyFeeds | Where-Object { $_.Author -eq $BskyCreds.username }
 ```
 
-![ProfileWorking]( /assets/images/ProfileWorking.jpg)
+![ProfileWorking]( /assets/images/ProfileBskyFeed.jpg)
 
 Hope this helps :)
