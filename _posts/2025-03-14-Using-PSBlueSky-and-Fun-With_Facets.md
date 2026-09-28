@@ -226,3 +226,9 @@ me going back to basics and sending a post via invoke-restmethod https://bsky.ap
 https://bsky.app/profile/blowdart.me/post/3lj6s5brnw22i - got it working :) for mentions
 
 got it working for hashtags -https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj6ticjmk62j
+
+https://bsky.app/profile/poshyoungteam.bsky.social/post/3lop5r7z7552j
+
+more here and discussion board
+
+https://github.com/jdhitsolutions/PSBluesky/discussions/42
