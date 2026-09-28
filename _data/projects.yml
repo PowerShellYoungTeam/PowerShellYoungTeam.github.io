@@ -1,0 +1,118 @@
+- name: worldmonitor
+  category: Dashboards & Data
+  description: A forked real-time global intelligence dashboard for news, geopolitical events, and infrastructure monitoring.
+  technologies: [TypeScript, Dashboard, Data]
+  url: https://github.com/PowerShellYoungTeam/worldmonitor
+  featured: false
+  label: Fork
+
+- name: PSMouseJiggler
+  category: Sysadmin & PowerShell
+  description: A Windows keep-awake PowerShell module with configurable mouse patterns, multiple methods, and a graphical interface.
+  technologies: [PowerShell, Windows, PowerShell Gallery]
+  url: https://github.com/PowerShellYoungTeam/PSMouseJiggler
+  gallery_url: https://www.powershellgallery.com/packages/PSMouseJiggler
+  featured: true
+  label: Most-downloaded Gallery module
+
+- name: PSExchangeClock
+  category: Dashboards & Data
+  description: A PowerShell and WPF dashboard for exchange hours, market data, and financial information; also available as a Gallery prerelease.
+  technologies: [PowerShell, WPF, PowerShell Gallery]
+  url: https://github.com/PowerShellYoungTeam/PSExchangeClock
+  gallery_url: https://www.powershellgallery.com/packages/PSExchangeClock
+  image: /assets/images/PSXC_AllExchangeTab.jpg
+  image_alt: PSExchangeClock showing its global exchanges dashboard
+  featured: true
+
+- name: LazyWinAdminGUI
+  category: Sysadmin & PowerShell
+  description: An exploratory WinForms administration GUI built with PowerShell, based on a classic project.
+  technologies: [PowerShell, WinForms, Administration]
+  url: https://github.com/PowerShellYoungTeam/LazyWinAdminGUI
+  featured: false
+  label: Fork / experiment
+
+- name: VDI Disk Cleanup Tool
+  category: Sysadmin & PowerShell
+  description: PowerShell cleanup scripts for reclaiming space from caches and other common VDI disk consumers.
+  technologies: [PowerShell, Windows, VDI]
+  url: https://github.com/PowerShellYoungTeam/VDIDiskCleanupTool
+  featured: true
+  label: Fork / adaptation
+
+- name: PSBlueSkyPostingTools
+  category: Community / Learning
+  description: PowerShell helpers for posting to Bluesky with the PSBlueSky module.
+  technologies: [PowerShell, Bluesky, Automation]
+  url: https://github.com/PowerShellYoungTeam/PSBlueSkyPostingTools
+  featured: true
+
+- name: PowerShellPranks
+  category: Fun / Experiments
+  description: A fork of a community collection of harmless PowerShell pranks.
+  technologies: [PowerShell, Community, Fun]
+  url: https://github.com/PowerShellYoungTeam/PowerShellPranks
+  featured: true
+  label: Fork
+
+- name: RoadRouteCardMaker
+  category: Fun / Experiments
+  description: JavaScript experiments for making road route cards.
+  technologies: [JavaScript, Mapping, Experiment]
+  url: https://github.com/PowerShellYoungTeam/RoadRouteCardMaker
+  featured: true
+  label: Experiment
+
+- name: Active-Directory
+  category: Sysadmin & PowerShell
+  description: A collection of scripts for working with Active Directory.
+  technologies: [PowerShell, Active Directory]
+  url: https://github.com/PowerShellYoungTeam/Active-Directory
+  featured: true
+
+- name: Citrix
+  category: Sysadmin & PowerShell
+  description: Scripts for Citrix snap-ins and related administration tasks.
+  technologies: [PowerShell, Citrix]
+  url: https://github.com/PowerShellYoungTeam/Citrix
+  featured: false
+
+- name: Network
+  category: Sysadmin & PowerShell
+  description: PowerShell scripts for networking and related tasks.
+  technologies: [PowerShell, Networking]
+  url: https://github.com/PowerShellYoungTeam/Network
+  featured: false
+
+- name: Windows-Patching
+  category: Sysadmin & PowerShell
+  description: Scripts to assist with Windows patching.
+  technologies: [PowerShell, Windows]
+  url: https://github.com/PowerShellYoungTeam/Windows-Patching
+  featured: false
+  label: Older scripts
+
+- name: Hardware-Monitor
+  category: Sysadmin & PowerShell
+  description: A small hardware monitor built with the Graphical PowerShell module.
+  technologies: [PowerShell, Hardware monitoring]
+  url: https://github.com/PowerShellYoungTeam/Hardware-Monitor
+  featured: false
+  label: Older experiment
+
+- name: Find-CrimeUKMap
+  category: Dashboards & Data
+  description: An early experiment mapping UK crime locations using data from Find-CrimeUK.
+  technologies: [PowerShell, Mapping, Data]
+  url: https://github.com/PowerShellYoungTeam/Find-CrimeUKMap
+  featured: false
+  label: Early experiment
+
+- name: PwshLeafMapGame
+  category: Community / Learning
+  description: A small PowerShell map-game project.
+  technologies: [PowerShell, Game, Mapping]
+  url: https://github.com/PowerShellYoungTeam/PwshLeafMapGame
+  featured: false
+  label: Experiment

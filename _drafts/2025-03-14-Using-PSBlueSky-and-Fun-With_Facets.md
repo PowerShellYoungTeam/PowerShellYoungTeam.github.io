@@ -1,18 +1,22 @@
-![Screenshot]( /assets/images/Hill_Night.png)
+---
+layout: post
+title: "Using PSBlueSky and Fun with Facets"
+date: 2025-03-14 00:00:00 +0000
+---
 
-# Using PSBlueSky and Fun with Facets
+![Screenshot](/assets/images/Hill_Night.png)
 
-following on from </_posts/2024-11-22-PowerShell-Profiles-KeePass-and-PSBlueSky>
+Following on from [PowerShell Profiles, KeePass, and PSBlueSky]({{ '/2024/11/22/PowerShell-Profiles-KeePass-and-PSBlueSky.html' | relative_url }}).
 
-## Help!
+## Help
 
 PSBlueSky has some Gucci built in help! check out these Cmdlets as well as Github help and built in Help (get-Help)
 
-'''powershell
+```powershell
 Open-BskyHelp # which will open a PDF version of this document in your default PDF viewer
 
 Get-BskyModuleInfo # which will show you the module commands and has clickable links to online help(module's github page)
-'''
+```
 
 ## Start a session
 
@@ -20,19 +24,19 @@ you need to use the creds in your vault!
 
 you can create a session, and if you get a timeout error, you can refresh the session.
 
-'''powershell
+```powershell
 Start-BskySession -credential $cred
 
 Get-BskySession # confirm that you are connected to the session
 
 Get-BSkySession | Update-BskySession # to update the session
-'''
+```
 
 ## Profile
 
 so I have added a few lines into my Profile so I get prompted for my vault password, and a BlueSky session gets started etc.. (can even retrieve stuff like notifications or feed etc...)
 
-'''powershell
+```powershell
 import-module PSBlueSky
 Import-Module SecretManagement.KeePass
 
@@ -40,13 +44,13 @@ $BskyCreds = Get-Secret -Vault PowerShell -Name BlueSky
 
 Start-BSkySession -Credential $BskyCreds
 Get-BskyNotification | Where-Object { $_.Date -gt (Get-Date).AddDays(-1) } | Sort-Object Date
-'''
+```
 
 ## Sending your first Skeet
 
 very easy, and as alwys with powershell, more than one way!
 
-'''powershell
+```powershell
 # Posting! this was my 2nd post..
 
 New-BskyPost -message "It works!! :)" -imagepath C:\users\Wighty\Pictures\BskyPic.PNG -ImageAlt "pic of my first PSBlueSky post" -Verbose -WhatIf
@@ -76,13 +80,13 @@ I'm really enjoying the #PSBlueSky module. It's a great way to post to Bluesky f
 "@
 
 New-BskyPost $multiline -Verbose -WhatIf
-'''
+```
 
 ## Feeds, Timelines, Notifications and reposts
 
 fairly straightforward, although you may want to filter somehow (if you don't want to fill you terminal)
 
-'''powershell
+```powershell
 # Feeds, Timelines Notifications and reposts
 
 Get-BskyFeed -Verbose # get your feed (good to filter down by date or limit)
@@ -117,13 +121,13 @@ Get-BskyFeed | Where-Object { $_.Text -match "#PowerShellWednesday"  }   | Selec
 
 # reposting, need non -default properties URI and CID
 Get-BskyFeed | Where-Object { $_.Text -match "#PowerShellWednesday"  }   |  Select-Object -First 1 | Select-Object Author,Date,Text,URI,CID | Publish-BskyPost -Quote "Live reposting during a demo, what can go wrong" -WhatIf
-'''
+```
 
 ## Users
 
 How to interact with user via PSBlueSKy (also keep an eye on your follower count)
 
-'''PowerShell
+```powershell
 # User Stuff
 
 Find-BskyUser -UserName "jsnover.com"  # find anyone with PowerShell in their username and Description
@@ -176,20 +180,21 @@ Get-BskyBlockedUser # get who you have blocked
 Block-BskyUser -UserName "baduser" -WhatIf
 
 Unblock-BskyUser -UserName "baduser" -WhatIf
-'''
+
+```
+
 ## Resources
 
-• GitHub - PSBlueSky - https://github.com/jdhitsolutions/PSBluesky
-Bluesky API Documentation - [HTTP Reference | Bluesky  ](https://docs.bsky.app/docs/category/http-reference)
+- [PSBlueSky on GitHub](https://github.com/jdhitsolutions/PSBluesky)
+- [Bluesky API HTTP reference](https://docs.bsky.app/docs/category/http-reference)
 
-https://github.com/jdhitsolutions/PSBluesky/discussions - checking this out for other uses!!!
+- [PSBlueSky discussions](https://github.com/jdhitsolutions/PSBluesky/discussions) - checking this out for other uses!
 
-https://github.com/jdhitsolutions/PSBluesky/discussions/35 - mdgrs - taskbar notifications!!!
+- [Discussion 35](https://github.com/jdhitsolutions/PSBluesky/discussions/35) - mdgrs - taskbar notifications!
 
-https://github.com/jdhitsolutions/PSBluesky/discussions/28 - tip of the day
+- [Discussion 28](https://github.com/jdhitsolutions/PSBluesky/discussions/28) - tip of the day
 
-I've shared the ways I'm using the PSBlueSky #PowerShell module in the repo's Discussion section. How are you using
-the module? jeffhicks bluesky https://bsky.app/profile/did:plc:ohgsqpfsbocaaxusxqlgfvd7/post/3li3j3yqxbh23
+I've shared the ways I'm using the PSBlueSky #PowerShell module in the repo's Discussion section. How are you using the module? See [Jeff Hicks' Bluesky post](https://bsky.app/profile/did:plc:ohgsqpfsbocaaxusxqlgfvd7/post/3li3j3yqxbh23).
 
 and see what people say here:
 
@@ -199,36 +204,36 @@ Using it in Azure Functions to call it from a Logic App for posting new blogs an
 
 ## Fun With Facets
 
-how it started... https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj45s5ctjt22
+- [How it started](https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj45s5ctjt22)
 
-https://bsky.app/profile/blowdart.me/post/3lj4lgcug2g22 - shots fired
+- [Shots fired](https://bsky.app/profile/blowdart.me/post/3lj4lgcug2g22)
 
-https://bsky.app/profile/blowdart.me/post/3lj4ln6er5c2l - cool site to see message json - by @natalie.sh https://atp.tools/at:/did:plc:hfgp6pj3akhqxntgqwramlbg/app.bsky.feed.post/3lj4lgcug2g22
+- [Message JSON example](https://bsky.app/profile/blowdart.me/post/3lj4ln6er5c2l) - a useful site for inspecting message JSON, shared by @natalie.sh: [AT Protocol post](https://atp.tools/at:/did:plc:hfgp6pj3akhqxntgqwramlbg/app.bsky.feed.post/3lj4lgcug2g22).
 
-https://github.com/jdhitsolutions/PSBluesky/blob/main/functions/New-PSBlueSkyPost.ps1 - picked througfh this and found _newFacetLink in helpers
+- [New-PSBlueSkyPost.ps1](https://github.com/jdhitsolutions/PSBluesky/blob/main/functions/New-PSBlueSkyPost.ps1) - picked through this and found `_newFacetLink` in helpers.
 
-https://github.com/jdhitsolutions/PSBluesky/blob/main/functions/helpers.ps1
+- [PSBlueSky helpers](https://github.com/jdhitsolutions/PSBluesky/blob/main/functions/helpers.ps1)
 
 pulled into funkyFacets and removed ref to custom _verbose function
 
-found this very helpful too - https://docs.bsky.app/blog/create-post
+- Found this very helpful too: [Bluesky's create-post guide](https://docs.bsky.app/blog/create-post).
 
-this was cool in helping me figure out JSON too: https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/richtext/facet.json
+- This was useful for understanding JSON too: [the rich-text facet lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/richtext/facet.json).
 
-https://docs.bsky.app/docs/advanced-guides/post-richtext - this for the facet bit, but piggy backing of psbluesky was easier!
+- [Bluesky rich-text guide](https://docs.bsky.app/docs/advanced-guides/post-richtext) - useful for the facet details, though building on PSBlueSky was easier!
 
 Barry let me know about hashtags
 
-https://bsky.app/profile/blowdart.me/post/3lj4mo6cyas2l
+- [Hashtag discussion](https://bsky.app/profile/blowdart.me/post/3lj4mo6cyas2l)
 
-me going back to basics and sending a post via invoke-restmethod https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj4rdci6mv2r
+- Me going back to basics and sending a post via `Invoke-RestMethod`: [Bluesky post](https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj4rdci6mv2r).
 
-https://bsky.app/profile/blowdart.me/post/3lj6s5brnw22i - got it working :) for mentions
+- [Mention experiment](https://bsky.app/profile/blowdart.me/post/3lj6s5brnw22i) - got it working!
 
-got it working for hashtags -https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj6ticjmk62j
+- Got it working for hashtags: [Bluesky post](https://bsky.app/profile/did:plc:k54achhksfhvlp5jd3rzv32h/post/3lj6ticjmk62j).
 
-https://bsky.app/profile/poshyoungteam.bsky.social/post/3lop5r7z7552j
+- [My post about the feature](https://bsky.app/profile/poshyoungteam.bsky.social/post/3lop5r7z7552j)
 
 more here and discussion board
 
-https://github.com/jdhitsolutions/PSBluesky/discussions/42
+- [Discussion 42](https://github.com/jdhitsolutions/PSBluesky/discussions/42)

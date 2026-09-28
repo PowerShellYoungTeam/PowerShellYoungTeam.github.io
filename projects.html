@@ -1,0 +1,27 @@
+---
+layout: page
+title: Projects
+description: PowerShell administration, dashboards, data experiments, and side projects.
+---
+
+<p class="projects-lede">A selection of scripts, dashboards, and experiments. Some are forks or older explorations; each repository is the best place to check its current state.</p>
+
+{% assign categories = "Sysadmin & PowerShell|Dashboards & Data|Fun / Experiments|Community / Learning" | split: "|" %}
+{% for category in categories %}
+  {% assign category_projects = site.data.projects | where: "category", category %}
+  {% if category_projects.size > 0 %}
+    <section class="project-category" aria-labelledby="category-{{ forloop.index }}">
+      <div class="category-heading">
+        <span class="category-index">0{{ forloop.index }}</span>
+        <h2 id="category-{{ forloop.index }}">{{ category }}</h2>
+      </div>
+      <div class="project-grid">
+        {% for project in category_projects %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+<p class="repository-note">Looking for something else? <a href="{{ site.social.github }}?tab=repositories">Browse all repositories on GitHub.</a></p>

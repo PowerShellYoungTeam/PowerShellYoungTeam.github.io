@@ -10,29 +10,24 @@ $color-scheme-dark: false !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #828282 !default;
-$lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-$lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
-
-$lm-site-title-color:      $lm-brand-color-dark !default;
-
-$lm-text-color:            #111111 !default;
-$lm-background-color:      #fdfdfd !default;
-$lm-code-background-color: #eeeeff !default;
-
-$lm-link-base-color:       #2a7ae2 !default;
-$lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
-$lm-link-hover-color:      $lm-text-color !default;
-
-$lm-border-color-01:       $lm-brand-color-light !default;
-$lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
-$lm-border-color-03:       $lm-brand-color-dark !default;
-
-$lm-table-text-color:      lighten($lm-text-color, 18%) !default;
-$lm-table-zebra-color:     lighten($lm-brand-color, 46%) !default;
-$lm-table-header-bg-color: lighten($lm-brand-color, 43%) !default;
-$lm-table-header-border:   lighten($lm-brand-color, 37%) !default;
-$lm-table-border-color:    $lm-border-color-01 !default;
+$lm-brand-color: #176fa8;
+$lm-brand-color-light: #dcebf5;
+$lm-brand-color-dark: #0d4a72;
+$lm-site-title-color: #142d3d;
+$lm-text-color: #243541;
+$lm-background-color: #f4f8fa;
+$lm-code-background-color: #eaf1f5;
+$lm-link-base-color: #075d95;
+$lm-link-visited-color: #604b82;
+$lm-link-hover-color: #073f68;
+$lm-border-color-01: #cedbe3;
+$lm-border-color-02: #aebfca;
+$lm-border-color-03: #708693;
+$lm-table-text-color: #243541;
+$lm-table-zebra-color: #edf3f6;
+$lm-table-header-bg-color: #e1ebf1;
+$lm-table-header-border: #c8d7e0;
+$lm-table-border-color: #cedbe3;
 
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
@@ -106,27 +101,24 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 // Dark mode
 // ---------
 
-$dm-brand-color: #fcee0a !default;	
-$dm-brand-color-light: lighten($dm-brand-color, 5%) !default;
-$dm-brand-color-dark: darken($dm-brand-color, 10%) !default;
-$dm-site-title-color: $dm-brand-color-light !default;
-$dm-text-color: #dbdbdb !default;
-$dm-background-color: #000 !default;
-$dm-code-background-color: #000 !default;
-$dm-link-base-color: #00f0ff !default;
-
-$dm-link-visited-color:    $dm-link-base-color !default;
-$dm-link-hover-color:      $dm-text-color !default;
-
-$dm-border-color-01:       $dm-brand-color-dark !default;
-$dm-border-color-02:       $dm-brand-color-light !default;
-$dm-border-color-03:       $dm-brand-color !default;
-
-$dm-table-text-color:      $dm-text-color !default;
-$dm-table-zebra-color:     lighten($dm-background-color, 4%) !default;
-$dm-table-header-bg-color: lighten($dm-background-color, 10%) !default;
-$dm-table-header-border:   lighten($dm-background-color, 21%) !default;
-$dm-table-border-color:    $dm-border-color-01 !default;
+$dm-brand-color: #72c5ff;
+$dm-brand-color-light: #a0d9ff;
+$dm-brand-color-dark: #378fc7;
+$dm-site-title-color: #e4f2fb;
+$dm-text-color: #e1eaf0;
+$dm-background-color: #0c151e;
+$dm-code-background-color: #111e29;
+$dm-link-base-color: #82ceff;
+$dm-link-visited-color: #c4a7ea;
+$dm-link-hover-color: #d5efff;
+$dm-border-color-01: #2b3b48;
+$dm-border-color-02: #405565;
+$dm-border-color-03: #638097;
+$dm-table-text-color: #d8e4ec;
+$dm-table-zebra-color: #111d27;
+$dm-table-header-bg-color: #192936;
+$dm-table-header-border: #334956;
+$dm-table-border-color: #2b3b48;
 
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
